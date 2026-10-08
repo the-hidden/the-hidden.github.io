@@ -1,0 +1,7 @@
+<div className='home'>
+    <div className='home-content'> 
+        <h1 className='home-title'>Bienvenido a nuestro restaurante</h1>
+        <p>Disfruta de los mejores platos de la región</p>
+    </div>
+</div>
+
