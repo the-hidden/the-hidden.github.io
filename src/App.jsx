@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Menu from './Pages/Menu';
 import Nosotros from './Pages/Nosotros';
 import Contacto from './Pages/Contacto';
+import Fooder from './Components/Fooder';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/Nosotros" element={<Nosotros />} />
         <Route path="/Contacto" element={<Contacto />} />
       </Routes>
+      <Fooder />
     </div>
   )
 }

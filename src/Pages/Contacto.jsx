@@ -1,14 +1,18 @@
 import React from 'react'
-import '../Styles/Gen.css';
+import '../Styles/Contacto.css'
+import HeroTitle from '../Components/HeroTitle';
+import { heroData } from '../data/heroData';
+import Location from '../Components/Location';
+
+
+
 
 const Contacto = () => {
   return (
-    <div className='Gen'>
-      <div className='Gen-content'>
-        <h1 className='Gen-title'>Contacto</h1>
-        <p>Contáctanos para más información.</p>
+      <div className='Contact'>
+        <HeroTitle {...heroData.location} />
+        <Location />
       </div>
-    </div>
   )
 }
 

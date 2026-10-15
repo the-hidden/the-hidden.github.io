@@ -1,0 +1,132 @@
+.about-chefs {
+    padding: 3rem 0 5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M10 50 Q30 30 50 50 T90 50' stroke='%23f0e6e6' stroke-width='1' fill='none'/%3E%3Cpath d='M10 70 Q30 50 50 70 T90 70' stroke='%23f0e6e6' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    position: relative;
+}
+
+.about-chefs-wrapper {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.about-chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.about-chef-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.about-chef-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-chef-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-chef-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background: white;
+}
+
+.about-chef-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 0.25rem 0;
+}
+
+.about-chef-role {
+    font-size: 0.75rem;
+    color: #e63946;
+    margin: 0;
+}
+
+.about-chef-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #e63946;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex-shrink: 0;
+}
+
+.about-chef-btn:hover {
+    background-color: #c62828;
+}
+
+.about-slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e63946;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.about-slider-arrow:hover {
+    background-color: #c62828;
+}
+
+.about-slider-left {
+    left: -20px;
+}
+
+.about-slider-right {
+    right: -20px;
+}
+
+@media (max-width: 992px) {
+
+    .about-chefs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-slider-left {
+        left: 10px;
+    }
+
+    .about-slider-right {
+        right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-serif-title {
+        font-size: 1.75rem;
+    }
+
+    .about-chefs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-slider-arrow {
+        display: none;
+    }
+}

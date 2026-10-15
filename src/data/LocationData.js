@@ -1,0 +1,48 @@
+
+
+export const locations = [
+    {
+        id: 1,
+        country: 'AUSTRALIA',
+        name: 'BASILICO SYDNEY',
+        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.',
+        address: '4517 Washington Ave. Manchester, Kentucky 39495, AU',
+        phone: '(+406) 555-0120',
+        email: 'Basilicofood123@gmail.com',
+        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses!2sco!4v1547560751180',
+    },
+    {
+        id: 2,
+        country: 'UNITED KINGDOM',
+        name: 'BASILICO LONDON',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.',
+        address: '221B Baker Street, London NW1 6XE, UK',
+        phone: '(+44) 20 7946 0958',
+        email: 'London@basilico.com',
+        image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.914033516735!2d-0.15851788422965947!3d51.52376797963789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf1e4b1a7d%3A0x7d8b1c1a7c7c1e5!2sBaker%20Street!5e0!3m2!1ses!2sco!4v1600000000000',
+    },
+    // {
+    //     id: 3,
+    //     country: 'UNITED STATES',
+    //     name: 'BASILICO NEW YORK',
+    //     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
+    //     address: '350 5th Ave, New York, NY 10118, USA',
+    //     phone: '(+1) 212-736-3100',
+    //     email: 'NewYork@basilico.com',
+    //     image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80',
+    //     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617257311456!2d-73.98784388422966!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ab0e0e1a5f%3A0x6b1e1c1a7c7c1e5!2sEmpire%20State%20Building!5e0!3m2!1ses!2sco!4v1600000000000',
+    // },
+    // {
+    //     id: 4,
+    //     country: 'UNITED STATES',
+    //     name: 'BASILICO NEW YORK',
+    //     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
+    //     address: '350 5th Ave, New York, NY 10118, USA',
+    //     phone: '(+1) 212-736-3100',
+    //     email: 'NewYork@basilico.com',
+    //     image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80',
+    //     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617257311456!2d-73.98784388422966!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ab0e0e1a5f%3A0x6b1e1c1a7c7c1e5!2sEmpire%20State%20Building!5e0!3m2!1ses!2sco!4v1600000000000',
+    // },
+];

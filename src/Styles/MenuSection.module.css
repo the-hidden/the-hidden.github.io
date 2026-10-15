@@ -1,0 +1,84 @@
+.menuSection {
+  padding: 4rem 4rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem; /* Suficiente espacio para que floten las tarjetas */
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: transparent;
+  color: rgb(250, 250, 250);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none; 
+  outline: none;
+}
+
+.tab:hover {
+  color: var(--primary);
+  /* background-color: rgba(254, 116, 31, 0.38); */
+  background-color: transparent;
+}
+
+.activeTab {
+  background-color: var(--primary);
+  color: white;
+}
+
+.activeTab:hover {
+  background-color: var(--primary-hover);
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem 1.5rem;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menuSection {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .menuSection {
+    padding: 2rem 1rem;
+  }
+  .tabsContainer {
+    margin-bottom: 3rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import food1 from '../assets/Fd1.png'
-import food2 from '../assets/Fd2.png'
-import food3 from '../assets/Fd3.png'
+import food1 from '../assets/Img/Fd1.png'
+import food2 from '../assets/Img/Fd2.png'
+import food3 from '../assets/Img/Fd3.png'
 import '../Styles/Hero.css'
 
 const ImageList = [

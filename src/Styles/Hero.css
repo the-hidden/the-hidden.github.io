@@ -1,10 +1,10 @@
 .hero {
   min-height: 550px;
-  background-image: url('../assets/bnn.png');
+  background-image: url('../assets/Img/bnn.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f3f6f4;
+  background-color: var(--bg-color);
   color: inherit;
   transition-duration: 200ms;
   display: flex;
@@ -48,6 +48,7 @@
   padding-left: 3rem;
   text-align: center;
   order: 2;
+  color: white;
 }
 
 @media (min-width: 640px) {

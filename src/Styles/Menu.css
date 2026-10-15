@@ -1,0 +1,7 @@
+.menu-bg{
+    min-height: auto;
+    background-color: var(--bg-color);
+}
+.div-menu{
+    padding-top: 50px;
+}

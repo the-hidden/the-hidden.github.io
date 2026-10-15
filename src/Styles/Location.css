@@ -1,0 +1,135 @@
+
+.location-page {
+    background-color: transparent;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+/* --- HERO --- */
+.location-hero {
+    height: 200px;
+    /* background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80'); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-hero-overlay {
+    text-align: center;
+    color: white;
+}
+
+.location-hero-overlay h2 {
+    font-family: 'Georgia', serif;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    margin-top: 150px;
+}
+
+.location-breadcrumb {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* --- GRID SECTION --- */
+.location-grid-section {
+    padding: 5rem 2rem;
+}
+
+.location-grid-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Tarjeta de Información */
+.location-info-card {
+    background-color: var(--primary);
+    color: rgb(255, 255, 255);
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.location-card-subtitle {
+    color: #000000;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.location-card-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    letter-spacing: 1px;
+}
+
+.location-card-desc {
+    font-size: 0.85rem;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.location-card-contact p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin: 0.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Imagen */
+.location-image-wrapper {
+    overflow: hidden;
+    min-height: 350px;
+}
+
+.location-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.location-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Mapa */
+.location-map-wrapper {
+    min-height: 350px;
+    background: #e5e5e5;
+}
+
+.location-map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .location-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .location-grid-container {
+        grid-template-columns: 1fr;
+    }
+    .location-hero-overlay h2 {
+        font-size: 2rem;
+    }
+}

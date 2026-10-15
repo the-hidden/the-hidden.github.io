@@ -1,0 +1,104 @@
+
+.hero-title {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.hero-title-text {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* --- BREADCRUMB --- */
+.hero-title-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-title-breadcrumb span {
+  opacity: 0.85;
+}
+
+.hero-title-current {
+  opacity: 1 !important;
+  font-weight: 700;
+}
+
+.hero-title-arrow {
+  opacity: 0.6 !important;
+  font-size: 1rem;
+}
+
+/* --- VARIANTES DE COLOR --- */
+.hero-title-breadcrumb-red {
+  background-color: #e63946;
+  color: white;
+}
+
+.hero-title-breadcrumb-dark {
+  background-color: #0e1824;
+  color: white;
+}
+
+.hero-title-breadcrumb-gold {
+  background-color: #c9a27e;
+  color: #0e1824;
+}
+.hero-title-breadcrumb-def {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 768px) {
+  .hero-title {
+    height: 300px;
+  }
+  .hero-title-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    height: 240px;
+  }
+  .hero-title-text {
+    font-size: 1.85rem;
+    margin-bottom: 1rem;
+  }
+  .hero-title-breadcrumb {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+}
