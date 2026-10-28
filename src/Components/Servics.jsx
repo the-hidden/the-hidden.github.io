@@ -38,7 +38,7 @@ const Servics = () => {
         <div>
             <section className="about-services">
                 <div className="about-container">
-                    <h2 className="about-serif-title">What We Do</h2>
+                    <h2 className="about-serif-title">Qué hacemos</h2>
                     <div className="about-services-grid">
                         {services.map((service) => (
                             <div key={service.id} className="about-service-card">

@@ -1,9 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ef5007;
+}
+
 :root {
   --primary: #ef5007;
   --primary-hover: #fe741f;
-  --bg-narder: rgb(22,24,26);
+  --bg-narder: rgb(22, 24, 26);
   --bg-color: rgba(19, 21, 23, 0.939);
-  
   --card-bg: #ffffff;
   --text-main: #2c2c2c;
   --text-muted: #686868;
@@ -11,14 +16,13 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
+@layer base {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+  }
 }

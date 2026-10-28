@@ -2,26 +2,26 @@
 export const services = [
     {
         id: 1,
-        title: 'Fresh Products',
-        description: 'Lorem ipsum is simply dummy text of the printing and',
+        title: 'Productos frescos',
+        description: 'Ingredientes frescos y de temporada, seleccionados cada día.',
         icon: 'leaf',
     },
     {
         id: 2,
-        title: 'Skilled Chefs',
-        description: 'Lorem ipsum is simply dummy text of the printing and',
+        title: 'Chefs calificados',
+        description: 'Cocina con técnica, experiencia y obsesión por el detalle.',
         icon: 'chef',
     },
     {
         id: 3,
-        title: 'Best Bar',
-        description: 'Lorem ipsum is simply dummy text of the printing and',
+        title: 'Mejor bar',
+        description: 'Coctelería de autor y una selección pensada para acompañar cada plato.',
         icon: 'cocktail',
     },
     {
         id: 4,
-        title: 'Vegan Cuisine',
-        description: 'Lorem ipsum is simply dummy text of the printing and',
+        title: 'Cocina vegana',
+        description: 'Platos veganos con el mismo cuidado y sabor que el resto de la carta.',
         icon: 'vegan',
     },
 ];
@@ -48,6 +48,12 @@ export const chefs = [
     {
         id: 4,
         name: 'Jemy Carline',
+        role: 'Senior Chef',
+        image: 'https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=400&q=80',
+    },
+    {
+        id: 5,
+        name: 'Jemy ',
         role: 'Senior Chef',
         image: 'https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=400&q=80',
     },

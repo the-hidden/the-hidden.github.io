@@ -27,7 +27,7 @@
 .about-service-icon {
     width: 70px;
     height: 70px;
-    background-color: #e63946;
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;

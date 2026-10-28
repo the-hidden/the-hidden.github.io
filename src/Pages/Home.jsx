@@ -1,15 +1,14 @@
 import React from 'react'
 import '../Styles/Home.css';
 import Hero from '../Components/Hero';
-import Services from '../Components/Services';
-import Footer from '../Components/Fooder';
-
+import Servics from '../Components/Servics';
+import AppStore from '../Components/AppStore';
 const Home = () => {
   return (
     <div className='home'>
       <Hero />
-      <Services />
-      {/* <Footer /> */}
+      <Servics />
+      <AppStore />
     </div>
     
   )

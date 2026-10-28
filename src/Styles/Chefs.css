@@ -9,13 +9,55 @@
     margin-top: 3rem;
 }
 
-.about-chefs-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.about-slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.about-slider-arrow:hover {
+    background-color: var(--primary-hover);
+}
+
+.about-slider-left {
+    left: -20px;
+}
+
+.about-slider-right {
+    right: -20px;
+}
+
+.about-carousel-window {
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.about-carousel-track {
+    display: flex;
+    width: 100%;
     gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.about-carousel-no-transition {
+    transition: none !important;
 }
 
 .about-chef-card {
+    flex: 0 0 calc((100% - 4.5rem) / 4);
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -46,12 +88,12 @@
     font-size: 1rem;
     font-weight: 700;
     color: #111;
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.25rem;
 }
 
 .about-chef-role {
     font-size: 0.75rem;
-    color: #e63946;
+    color: var(--primary);
     margin: 0;
 }
 
@@ -59,7 +101,7 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background-color: #e63946;
+    background-color: var(--primary);
     border: none;
     display: flex;
     align-items: center;
@@ -70,42 +112,12 @@
 }
 
 .about-chef-btn:hover {
-    background-color: #c62828;
-}
-
-.about-slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #e63946;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    transition: background 0.3s ease;
-}
-
-.about-slider-arrow:hover {
-    background-color: #c62828;
-}
-
-.about-slider-left {
-    left: -20px;
-}
-
-.about-slider-right {
-    right: -20px;
+    background-color: var(--primary-hover);
 }
 
 @media (max-width: 992px) {
-
-    .about-chefs-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .about-chef-card {
+        flex-basis: calc((100% - 1.5rem) / 2);
     }
 
     .about-slider-left {
@@ -118,15 +130,19 @@
 }
 
 @media (max-width: 600px) {
-    .about-serif-title {
-        font-size: 1.75rem;
+    .about-chef-card {
+        flex: 0 0 100%;
     }
 
-    .about-chefs-grid {
-        grid-template-columns: 1fr;
+    .about-chef-img {
+        height: 280px;
     }
 
-    .about-slider-arrow {
-        display: none;
+    .about-slider-left {
+        left: 8px;
+    }
+
+    .about-slider-right {
+        right: 8px;
     }
 }
